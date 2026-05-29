@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main website styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cccccc;
+    colour: white;
+    line-height: 1.6;
+}
+
+/* Header styling */
+
+header {
+    background-color: #ff6600;
+    padding: 20px;
+    text-align: center;
+}
+
+/* navigation menu styling */
+
+nav {
+    margin-top: 10px;
+}
+
+/* Navigation links */
+
+nav a {
+    color: white;
+    text-description: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+nav a:hover {
+    color: yellow
+}
+
+/* Main content spacing */
+
+main {
+    padding: 40px;
+}
+
+/* Section spacing */
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Headings */
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Image-styling */
+
+img {
+    width: 300px
+    /* border-radius: 10px; */
+    margin-top: 20px;
+}
+
+/* Footer styling */
+
+footer {
+    beackground-color: #222;
+    text-align: center;
+    padding: 20px;
+}
+
+/* DESKTOP LAYOUT */
+
+/* Mult-column product layout */
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Individual product cards */
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+/* TABLET BREAKPOINT */
+
+@media screen and (max-width: 992px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    /* Navigation spacing */
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    /* Product layout changes */
+
+    .products-container {
+        flex-wrap: wrap;
+    }
+
+    .products-card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    /* Images resize */
+
+    img {
+        width: 250px;
+    }
+}
+
+/* MOBILE BREAKPOINT */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    /* Stack navigation vertically */
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Single column layout */
+
+    .products-container {
+        flex-direction: column;
+    }
+
+    .products-card {
+        width: 100%;
+    }
+
+    /* Responsive images */
+
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Smaller padding */
+
+    main {
+        padding: 20px;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+

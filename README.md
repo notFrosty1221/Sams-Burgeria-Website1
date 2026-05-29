@@ -66,3 +66,13 @@ This project is a multi-page website designed for a fictional restaurant. It dem
 ## References
 - W3Schools: https://www.w3schools.com/
 - MDN Web Docs: https://developer.mozilla.org/
+
+Responsive design screenshots of my website
+
+desktop view: ![alt text](<screenshots/desktop view of website.png>) 
+
+tablet view: ![alt text](<screenshots/tablet view of website.jpeg>)
+
+Iphone view: ![alt text](<screenshots/iphone xr view of website.jpeg>)
+
+
