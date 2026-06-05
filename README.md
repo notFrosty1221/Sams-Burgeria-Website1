@@ -67,6 +67,152 @@ This project is a multi-page website designed for a fictional restaurant. It dem
 - W3Schools: https://www.w3schools.com/
 - MDN Web Docs: https://developer.mozilla.org/
 
+# Part 2: CSS Styling and Responsive Design
+
+## Overview
+
+Part 2 focused on improving the visual appearance, usability, and responsiveness of the Sams Burgeria website through CSS styling and responsive web design techniques. An external stylesheet was created and linked to all webpages to ensure consistent styling throughout the website.
+
+---
+
+## CSS Styling
+
+### External Stylesheet
+
+A single external stylesheet (`style.css`) was created and linked to all HTML pages. This approach ensured consistent styling and simplified website maintenance.
+
+### Base Styling
+
+The following base styles were implemented:
+
+* Consistent font family throughout the website.
+* Uniform colour scheme using burger-themed colours.
+* Standardised margins and padding.
+* Consistent heading and paragraph styling.
+* Styled navigation menu.
+* Styled footer section.
+* Styled images and content sections.
+
+### CSS Reset
+
+A basic CSS reset was implemented to minimise browser inconsistencies and provide a consistent starting point for styling across different browsers.
+
+Example:
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+
+---
+
+## Responsive Design
+
+### Breakpoints
+
+Media queries were implemented to support different screen sizes:
+
+* Desktop: 1024px and above
+* Tablet: 768px – 1023px
+* Mobile: 767px and below
+
+### Layout Adjustments
+
+Responsive techniques included:
+
+* Multi-column layouts on larger screens.
+* Single-column layouts on smaller screens.
+* Responsive navigation adjustments.
+* Responsive images.
+* Responsive font sizing and spacing.
+
+### Responsive Images
+
+Responsive image techniques were implemented using:
+
+* `srcset`
+* `sizes`
+* `picture` elements
+
+These techniques allow browsers to load appropriately sized images depending on the user's device and screen resolution.
+
+### Testing
+
+The website was tested using browser developer tools to simulate:
+
+* Desktop devices
+* Tablet devices
+* Mobile devices
+
+Screenshots of each view were captured and included as evidence within the project documentation.
+
+---
+
+## Feedback Improvements from Part 1
+
+Based on feedback received during Part 1, the following improvements were made:
+
+* Improved website structure and organisation.
+* Enhanced navigation consistency across all pages.
+* Added semantic HTML5 elements.
+* Improved image organisation using dedicated image folders.
+* Enhanced content formatting using appropriate headings and sections.
+* Improved accessibility through better page structure and navigation.
+* Added responsive design features for mobile and tablet compatibility.
+
+---
+
+## Changelog
+
+### Version 2.0 – CSS Styling and Responsive Design
+
+#### Added
+
+* External stylesheet (`style.css`).
+* Global colour scheme and typography.
+* Navigation menu styling.
+* Footer styling.
+* Responsive image support.
+* Media queries for mobile, tablet, and desktop devices.
+* CSS reset for cross-browser consistency.
+
+#### Improved
+
+* Website readability.
+* Content spacing and alignment.
+* Mobile usability.
+* Overall visual appearance.
+* Cross-browser compatibility.
+
+#### Fixed
+
+* Layout inconsistencies between pages.
+* Navigation styling issues.
+* Content alignment issues.
+* Image responsiveness problems.
+
+---
+
+## Updated References
+
+Mozilla Developer Network (MDN). (2026). CSS Documentation. Available at: https://developer.mozilla.org/
+
+Mozilla Developer Network (MDN). (2026). Responsive Web Design Basics. Available at: https://developer.mozilla.org/
+
+W3Schools. (2026). CSS Tutorial. Available at: https://www.w3schools.com/css/
+
+W3Schools. (2026). CSS Media Queries. Available at: https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+W3Schools. (2026). Responsive Web Design Tutorial. Available at: https://www.w3schools.com/css/css_rwd_intro.asp
+
+Google Developers. (2026). Responsive Web Design Fundamentals. Available at: https://developers.google.com/
+
+Mozilla Developer Network (MDN). (2026). HTML Responsive Images Guide. Available at: https://developer.mozilla.org/
+
+
 Responsive design screenshots of my website
 
 desktop view: ![alt text](<screenshots/desktop view of website.png>) 
