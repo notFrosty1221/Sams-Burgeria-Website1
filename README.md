@@ -318,6 +318,36 @@ Examples of commit messages include:
 
 ---
 
+## Changelog
+
+### Version 3.0 – Functionality and SEO Improvements
+
+#### Added
+
+* Leaflet interactive map on Contact page
+* Lightbox image gallery
+* JavaScript form validation and AJAX submission
+* Dynamic content handling with JavaScript
+* SEO meta tags for all pages
+* robots.txt and sitemap.xml files
+
+#### Improved
+
+* User interaction and experience
+* Website navigation and responsiveness
+* Form validation and error handling
+* Content structure and readability
+* Search engine optimisation
+
+#### Fixed
+
+* Form submission issues
+* Navigation inconsistencies
+* Image display and responsiveness problems
+* Layout alignment across pages
+
+---
+
 ## 🌐 Live Website
 
 You can view the live version of my burger website here:
