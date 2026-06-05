@@ -2,6 +2,11 @@
 <html lang="en">
     <head>
         <title>Enquiry | Sams Burgeria</title>
+
+        <meta name="description" content="Send us your burger enquiries, feedback or questions. We are happy to assist you at Burger World.">
+        <!-- Mobile friendliness -->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="css/style.css">
     </head>
 
@@ -27,19 +32,33 @@
                 <p>Please fill in the form below.</p>
 
                 <form>
-                    <input type="text" placeholder="Full Name"><br><br>
-                    <input type="email" placeholder="Email Adress"><br><br>
-                    <input type="tel" placeholder="Phone Number"><br><br>
+                    <form id="enquiryForm">
 
-                    <select>
-                        <option>General Question</option>
-                        <option>Product Enquiry</option>
-                        <option>Feedback</option>
-                        </select><br><br>
+    <label for="enqName">Full Name:</label><br>
+    <input type="text" id="enqName" required minlength="3"><br><br>
 
-                        <textarea placeholder="Your message"></textarea><br><br>
+    <label for="enqEmail">Email Address:</label><br>
+    <input type="email" id="enqEmail" required><br><br>
 
-                        <button type="submit">Send</button>
+    <label for="enqPhone">Phone Number:</label><br>
+    <input type="tel" id="enqPhone" required pattern="[0-9]{10}"><br><br>
+
+    <label for="burgerType">Enquiry Type:</label><br>
+    <select id="burgerType" required>
+        <option value="">Select an option</option>
+        <option>General Question</option>
+        <option>Product Enquiry</option>
+        <option>Feedback</option>
+    </select><br><br>
+
+    <label for="enqMessage">Your Message:</label><br>
+    <textarea id="enqMessage" required minlength="5"></textarea><br><br>
+
+    <button type="submit">Send Enquiry</button>
+
+</form>
+
+<p id="enqResponse"></p>
                     </form>
             </section>
 

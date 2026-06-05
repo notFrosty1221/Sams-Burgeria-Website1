@@ -3,7 +3,13 @@ html id="contact1"
 <html lang="en">
     <head>
         <title>Contact | Sams Burgeria</title>
+
+        <meta name="description" content="Find Sams Burgeria locations, contact details, and opening hours in Cape Town.">
+        <!-- Mobile friendliness -->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 
     </head>
 
@@ -39,13 +45,46 @@ html id="contact1"
             <section>
                 <h2>Send a message</h2>
 
-                <form>
-                    <input type="text" placeholder="Name"><br><br>
-                    <input type="email" placeholder="Email"><br><br>
-                    <textarea placeholder="Message"></textarea><br><br>
-                    <button type="submit">Send</button>
 
-                </form>
+    <form id="contactForm" action="mailto:samsburgeria@gmail.com" method="post">
+
+        <label for="conName">Full Name:</label><br>
+        <input type="text"
+               id="conName"
+               required
+               minlength="3"><br><br>
+
+        <label for="conEmail">Email Address:</label><br>
+        <input type="email"
+               id="conEmail"
+               required><br><br>
+
+        <label for="messageType">Message Type:</label><br>
+        <select id="messageType" required>
+            <option value="">Select a message type</option>
+            <option>General Enquiry</option>
+            <option>Feedback</option>
+            <option>Complaint</option>
+        </select><br><br>
+
+        <label for="conMessage">Message:</label><br>
+        <textarea id="conMessage"
+                  required
+                  minlength="10"></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <p id="conResponse"></p>
+
+
+            </section>
+
+            <section>
+                <h2>Find Us</h2>
+
+                <div id="map"></div>
             </section>
 
         </main>
@@ -53,6 +92,9 @@ html id="contact1"
         <footer>
             <p>&copy; 2023 Sams Burgeria</p>
         </footer>
+
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="js/script.js"></script>
 
     </body>
 </html>

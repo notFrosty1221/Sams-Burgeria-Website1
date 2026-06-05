@@ -2,7 +2,13 @@
 <html lang="en">
     <head>
         <title>Products | Sams Burgeria</title>
+
+        <meta name="description" content="Explore our delicious burger menu including beef burgers, chicken burgers, vegan, and vegetarian options made fresh daily.">
+        <!-- Mobile friendliness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" href="css/style.css">
+        
     </head>
 
     <body>
@@ -20,6 +26,14 @@
         </header>
 
         <main>
+
+            <section>
+                <h2>Search your favourite burger</h2>
+
+                <input type ="text" id="searchInput" placeholder="Search burgers...">
+
+                <div id="productList"></div>
+            </section>
 
             <section>
                 
@@ -255,6 +269,50 @@
                         </div>
                     
                 </section>
+
+                <section>
+                    <h2>Burger categories</h2>
+
+                    <button class="accordion">Beef burgers</button>
+                    <div class="panel">
+                        <p>Sams Classic Beef Burger, BBQ Bacon Burger, Double Smashed Spicy Burger</p>
+                    </div>
+
+                    <button class="accordion">Chicken Burgers</button>
+                    <div class="panel">
+                        <p>Sams Crispy Chicken Burger, Spicy Chicken Burger, Double Cheese Chicken Burger</p>
+                    </div>
+
+                    <button class="accordion">Vegetarian and Vegan Burgers</button>
+                    <div class="panel">
+                        <p>Veggie Delight, Veggie Vurger, Mushroom Burger</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Sams Burgeria Gallery</h2>
+
+                    <img src="css/js/images/burgers/beef burger with cheese and caramilised onions free pexels.jpg"
+                    class="gallery-image"
+                    alt="Sams Classic Beef Burger">
+
+                    <img src="css/js/images/burgers/crispy chicken sandwhich used for restaruant website.jpg"
+                    class="gallery-image"
+                    alt="Sams Crispy Chicken Burger">
+
+                    <img src="css/js/images/burgers/Vegetarian delight burger for restaraunt for website.jpg"
+                    class="gallery-image"
+                    alt="Veggie Delight">
+
+                    <img src="css/js/images/burgers/fries for restaraunt for website.jpg"
+                    class="gallery-image"
+                    alt="Fries">
+
+                </section>
+
+                <div id="lightbox">
+                    <img id="lightbox-img" src="" alt="Large Burger Image">
+                </div>
 
         </main>
 
